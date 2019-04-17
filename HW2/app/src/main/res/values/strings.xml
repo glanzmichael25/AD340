@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AddingActivity</string>
+    <string name="edit_text_message">Enter Message Here</string>
+    <string name="button">Send Message</string>
+    <string name="view_text_message">Message Displays Here</string>
+    <string name="view_text_title">Message from MainActivity Below</string>
+</resources>
