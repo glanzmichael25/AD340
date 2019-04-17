@@ -22,14 +22,13 @@ public class SecondActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedState) {
         super.onCreate(savedState);
+        setContentView(R.layout.activity_second);
 
         //gets intent from MainActivity
         intent = getIntent();
 
         //places text from MainActivity into message
         message = intent.getStringExtra(MainActivity.MESSAGE_ID);
-
-        setContentView(R.layout.activity_second);
 
         //get references to the widgets
         textview = (TextView)findViewById(R.id.textView);
