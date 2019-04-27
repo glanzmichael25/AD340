@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyRecycleViewApp</string>
+    <string name="button1">Movies</string>
+    <string name="button2">Toast 1</string>
+    <string name="button3">Toast 2</string>
+    <string name="button4">Toast 3</string>
+    <string name="one">ONE</string>
+    <string name="two">TWO</string>
+    <string name="three">THREE</string>
+    <string name="four">FOUR</string>
+</resources>
