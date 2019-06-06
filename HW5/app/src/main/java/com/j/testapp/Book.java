@@ -22,8 +22,12 @@ public class Book {
 
 
     public Book(Context context) {
-        this.title = "Title";
-        this.oldbookOrNewbook = "Used";
+        this.title = context.getString(R.string.default_title);
+        //String defaultBookCost = context.getString(R.string.default_bookType);
+
+        this.oldbookOrNewbook = context.getString(R.string.default_bookType);
+
+
     }
 
     //declare getters
@@ -44,7 +48,7 @@ public class Book {
         return oldbookOrNewbook;
     }
 
-    public void setoldbookOrNewbook(String rentOrBuy) {
+    public void setoldbookOrNewbook(String oldbookOrNewbook) {
 
         this.oldbookOrNewbook = oldbookOrNewbook;
     }
