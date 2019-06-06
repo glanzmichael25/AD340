@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AsynchronousNetworkConnectionsApp</string>
+    <string name="button_cameras">Load Cameras</string>
+    <string name="connecting">Attempting to connect</string>
+    <string name="failed_connection">Connection Failed</string>
+    <string name="camera">Camera</string>
+    <string name="pic">Pic</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
