@@ -72,18 +72,19 @@ public class Cameras {
 
             for (int i=0; i < JSONdata.length(); i++) {
 
+                //sets up JSON object
                 JSONObject object = JSONdata.getJSONObject(i);
-
+                //gets camera from object
                 JSONArray camera = object.getJSONArray("Cameras");
-
+                //gets data from object
                 JSONObject cameraData = camera.getJSONObject(0);
-
+                //gets image
                 imageUrl = cameraData.getString("ImageUrl");
-
+                //gets description
                 description = cameraData.getString("Description");
-
+                //gets type
                 type = cameraData.getString("Type");
-
+                //chooses link
                 if (type.equalsIgnoreCase("wsdotLink")){
 
                     imageUrlComplete = wsdotLink + imageUrl;
@@ -92,7 +93,7 @@ public class Cameras {
                     imageUrlComplete = sdotLink + imageUrl;
 
                 }
-
+                //builds cameras
                 camerasArray.add(new Cameras.Builder().label(description)
                         .imageUrl(imageUrlComplete)
                         .build());

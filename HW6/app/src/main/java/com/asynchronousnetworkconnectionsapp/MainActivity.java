@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     //declare variables
     private TextView message;
     private ImageView videoView;
+    private Button button;
 
     public static final String MESSAGE_ID = "messageID";
 
@@ -29,9 +30,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button myButton = findViewById(R.id.button_cameras);
+        //gets references
+        button = findViewById(R.id.button_cameras);
 
-        myButton.setOnClickListener(this);
+        button.setOnClickListener(this);
         message = findViewById(R.id.result);
         videoView = findViewById(R.id.pic);
     }
@@ -39,6 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view){
 
+        //attempts to establish connection
         ConnectivityManager manager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo info = manager.getActiveNetworkInfo();
 

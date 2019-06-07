@@ -27,7 +27,6 @@ public class CameraRecyclerViewAdapter extends RecyclerView.Adapter<CameraRecycl
             void onClick(int position);
         }
 
-        //private Cameras[] cameras;
 
         public static class ViewHolder extends RecyclerView.ViewHolder {
             private CardView layout;

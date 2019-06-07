@@ -22,6 +22,7 @@ public class CameraAdapter extends ArrayAdapter<Cameras> {
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
 
+            //gets references for layout
             LinearLayout layout = new LinearLayout(context);
             layout.setOrientation(LinearLayout.VERTICAL);
 
