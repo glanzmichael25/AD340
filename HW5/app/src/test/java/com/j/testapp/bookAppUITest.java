@@ -9,6 +9,13 @@ import androidx.test.rule.ActivityTestRule;
 import androidx.test.runner.AndroidJUnit4;
 
 
+//imports
+import android.support.test.runner.AndroidJUnit4;
+import org.junit.runner.RunWith;
+import android.support.test.espresso.Espresso.onView;
+import android.support.test.espresso.matcher.ViewMatchers.withId;
+
+import static org.hamcrest.CoreMatchers.instanceOf;
 
 
 @RunWith(AndroidJUnit4.class)
